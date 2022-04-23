@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import DropDown
+import SwiftyStoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        DropDown.startListeningToKeyboard()
+        
+        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
+                for purchase in purchases {
+                    switch purchase.transaction.transactionState {
+                    case .purchased, .restored:
+                        if purchase.needsFinishTransaction {
+                            // Deliver content from server, then:
+                            SwiftyStoreKit.finishTransaction(purchase.transaction)
+                        }
+                        // Unlock content
+                    case .failed, .purchasing, .deferred:
+                        break // do nothing
+                    @unknown default:
+                        break // do nothing
+                    }
+                }
+            }
+        
         return true
     }
 
