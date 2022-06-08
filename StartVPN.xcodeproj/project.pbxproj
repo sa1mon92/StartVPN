@@ -12,12 +12,29 @@
 		1A2CA8D825FBB8CA00398FAC /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CA8D725FBB8CA00398FAC /* PacketTunnelProvider.swift */; };
 		1A2CA8DD25FBB8CA00398FAC /* tunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A2CA8D425FBB8CA00398FAC /* tunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1A34863925FBBD900013C10D /* extensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A34863825FBBD900013C10D /* extensionViewController.swift */; };
+		1A3B6DDE284F4F6200C5B656 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3B6DDD284F4F6200C5B656 /* ConnectViewController.xib */; };
 		1A584BA226275656000448CE /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A584BA126275656000448CE /* PolicyViewController.swift */; };
 		1A584BA6262756B5000448CE /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A584BA5262756B5000448CE /* TermsViewController.swift */; };
+		1A5D477E284E7B7D00B2141F /* ConnectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D4777284E7B7D00B2141F /* ConnectPresenter.swift */; };
+		1A5D477F284E7B7D00B2141F /* ConnectWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D4778284E7B7D00B2141F /* ConnectWorker.swift */; };
+		1A5D4780284E7B7D00B2141F /* ConnectRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D4779284E7B7D00B2141F /* ConnectRouter.swift */; };
+		1A5D4781284E7B7D00B2141F /* ConnectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D477A284E7B7D00B2141F /* ConnectModels.swift */; };
+		1A5D4782284E7B7D00B2141F /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D477B284E7B7D00B2141F /* ConnectViewController.swift */; };
+		1A5D4783284E7B7D00B2141F /* ConnectInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D477C284E7B7D00B2141F /* ConnectInteractor.swift */; };
 		1A6E97F82625ABB5002AF662 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E97F72625ABB5002AF662 /* PurchaseViewController.swift */; };
 		1A7191942617939B00403CC4 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7191932617939B00403CC4 /* Units.swift */; };
 		1A93DEFB262C585C0090D9E8 /* SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93DEFA262C585C0090D9E8 /* SwiftyStoreKit.swift */; };
 		1A949B772633171700C65B62 /* extensionUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A949B762633171700C65B62 /* extensionUIDevice.swift */; };
+		1ABD614C284F887E005C0227 /* CountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD6145284F887E005C0227 /* CountriesPresenter.swift */; };
+		1ABD614D284F887E005C0227 /* CountriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD6146284F887E005C0227 /* CountriesWorker.swift */; };
+		1ABD614E284F887E005C0227 /* CountriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD6147284F887E005C0227 /* CountriesRouter.swift */; };
+		1ABD614F284F887E005C0227 /* CountriesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD6148284F887E005C0227 /* CountriesModels.swift */; };
+		1ABD6150284F887E005C0227 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD6149284F887E005C0227 /* CountriesViewController.swift */; };
+		1ABD6151284F887E005C0227 /* CountriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD614A284F887E005C0227 /* CountriesInteractor.swift */; };
+		1ABD6152284F887E005C0227 /* CountriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD614B284F887E005C0227 /* CountriesViewController.xib */; };
+		1ABD6156284F8B0C005C0227 /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD6154284F8B0C005C0227 /* CountriesTableViewCell.swift */; };
+		1ABD6157284F8B0C005C0227 /* CountriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD6155284F8B0C005C0227 /* CountriesTableViewCell.xib */; };
+		1ABD6159284FAF5E005C0227 /* extensionUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABD6158284FAF5E005C0227 /* extensionUINavigationController.swift */; };
 		1ABFABFD25FBAF010001D09E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFABFC25FBAF010001D09E /* AppDelegate.swift */; };
 		1ABFABFF25FBAF010001D09E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFABFE25FBAF010001D09E /* SceneDelegate.swift */; };
 		1ABFAC0125FBAF010001D09E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABFAC0025FBAF010001D09E /* ViewController.swift */; };
@@ -71,12 +88,29 @@
 		1A2CA8D925FBB8CA00398FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A2CA8DA25FBB8CA00398FAC /* tunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tunnel.entitlements; sourceTree = "<group>"; };
 		1A34863825FBBD900013C10D /* extensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionViewController.swift; sourceTree = "<group>"; };
+		1A3B6DDD284F4F6200C5B656 /* ConnectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
 		1A584BA126275656000448CE /* PolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
 		1A584BA5262756B5000448CE /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		1A5D4777284E7B7D00B2141F /* ConnectPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectPresenter.swift; sourceTree = "<group>"; };
+		1A5D4778284E7B7D00B2141F /* ConnectWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWorker.swift; sourceTree = "<group>"; };
+		1A5D4779284E7B7D00B2141F /* ConnectRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectRouter.swift; sourceTree = "<group>"; };
+		1A5D477A284E7B7D00B2141F /* ConnectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectModels.swift; sourceTree = "<group>"; };
+		1A5D477B284E7B7D00B2141F /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		1A5D477C284E7B7D00B2141F /* ConnectInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectInteractor.swift; sourceTree = "<group>"; };
 		1A6E97F72625ABB5002AF662 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		1A7191932617939B00403CC4 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		1A93DEFA262C585C0090D9E8 /* SwiftyStoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreKit.swift; sourceTree = "<group>"; };
 		1A949B762633171700C65B62 /* extensionUIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUIDevice.swift; sourceTree = "<group>"; };
+		1ABD6145284F887E005C0227 /* CountriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesPresenter.swift; sourceTree = "<group>"; };
+		1ABD6146284F887E005C0227 /* CountriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesWorker.swift; sourceTree = "<group>"; };
+		1ABD6147284F887E005C0227 /* CountriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRouter.swift; sourceTree = "<group>"; };
+		1ABD6148284F887E005C0227 /* CountriesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModels.swift; sourceTree = "<group>"; };
+		1ABD6149284F887E005C0227 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		1ABD614A284F887E005C0227 /* CountriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesInteractor.swift; sourceTree = "<group>"; };
+		1ABD614B284F887E005C0227 /* CountriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesViewController.xib; sourceTree = "<group>"; };
+		1ABD6154284F8B0C005C0227 /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
+		1ABD6155284F8B0C005C0227 /* CountriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTableViewCell.xib; sourceTree = "<group>"; };
+		1ABD6158284FAF5E005C0227 /* extensionUINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionUINavigationController.swift; sourceTree = "<group>"; };
 		1ABFABF925FBAF010001D09E /* StartVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABFABFC25FBAF010001D09E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ABFABFE25FBAF010001D09E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +174,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1A2CA8D625FBB8CA00398FAC /* tunnel */ = {
+		1A5D4763284E6E3600B2141F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1AE2153725FBD0EB00175CA5 /* extensionUIButton.swift */,
+				1A949B762633171700C65B62 /* extensionUIDevice.swift */,
+				1A7191932617939B00403CC4 /* Units.swift */,
+				1ABD6158284FAF5E005C0227 /* extensionUINavigationController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1A5D4764284E6F1F00B2141F /* ConnectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A5D4777284E7B7D00B2141F /* ConnectPresenter.swift */,
+				1A5D4778284E7B7D00B2141F /* ConnectWorker.swift */,
+				1A5D4779284E7B7D00B2141F /* ConnectRouter.swift */,
+				1A5D477A284E7B7D00B2141F /* ConnectModels.swift */,
+				1A5D477B284E7B7D00B2141F /* ConnectViewController.swift */,
+				1A5D477C284E7B7D00B2141F /* ConnectInteractor.swift */,
+				1A3B6DDD284F4F6200C5B656 /* ConnectViewController.xib */,
+			);
+			path = ConnectViewController;
+			sourceTree = "<group>";
+		};
+		1AB164CF28511B0C000C8804 /* tunnel */ = {
 			isa = PBXGroup;
 			children = (
 				1A2CA8D725FBB8CA00398FAC /* PacketTunnelProvider.swift */,
@@ -151,11 +210,35 @@
 			path = tunnel;
 			sourceTree = "<group>";
 		};
+		1ABD6144284F87FA005C0227 /* CountriesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1ABD6153284F89F8005C0227 /* CountriesTableViewCell */,
+				1ABD6145284F887E005C0227 /* CountriesPresenter.swift */,
+				1ABD6146284F887E005C0227 /* CountriesWorker.swift */,
+				1ABD6147284F887E005C0227 /* CountriesRouter.swift */,
+				1ABD6148284F887E005C0227 /* CountriesModels.swift */,
+				1ABD6149284F887E005C0227 /* CountriesViewController.swift */,
+				1ABD614A284F887E005C0227 /* CountriesInteractor.swift */,
+				1ABD614B284F887E005C0227 /* CountriesViewController.xib */,
+			);
+			path = CountriesViewController;
+			sourceTree = "<group>";
+		};
+		1ABD6153284F89F8005C0227 /* CountriesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1ABD6154284F8B0C005C0227 /* CountriesTableViewCell.swift */,
+				1ABD6155284F8B0C005C0227 /* CountriesTableViewCell.xib */,
+			);
+			path = CountriesTableViewCell;
+			sourceTree = "<group>";
+		};
 		1ABFABF025FBAF010001D09E = {
 			isa = PBXGroup;
 			children = (
 				1ABFABFB25FBAF010001D09E /* StartVPN */,
-				1A2CA8D625FBB8CA00398FAC /* tunnel */,
+				1AB164CF28511B0C000C8804 /* tunnel */,
 				1ABFABFA25FBAF010001D09E /* Products */,
 				1A2CA8CD25FBB8AE00398FAC /* Frameworks */,
 				2E228DC27412D29A39F27C0D /* Pods */,
@@ -174,11 +257,13 @@
 		1ABFABFB25FBAF010001D09E /* StartVPN */ = {
 			isa = PBXGroup;
 			children = (
-				1ACA83C32600021300204595 /* VPN */,
-				1A2CA8CC25FBB8AE00398FAC /* StartVPN.entitlements */,
 				1ABFABFC25FBAF010001D09E /* AppDelegate.swift */,
-				1A7191932617939B00403CC4 /* Units.swift */,
 				1ABFABFE25FBAF010001D09E /* SceneDelegate.swift */,
+				1A5D4763284E6E3600B2141F /* Helpers */,
+				1ACA83C32600021300204595 /* VPN */,
+				1A5D4764284E6F1F00B2141F /* ConnectViewController */,
+				1ABD6144284F87FA005C0227 /* CountriesViewController */,
+				1A2CA8CC25FBB8AE00398FAC /* StartVPN.entitlements */,
 				1ABFAC0025FBAF010001D09E /* ViewController.swift */,
 				1ACA83BD25FFF89800204595 /* Main.storyboard */,
 				1ACA83AC25FFF1FA00204595 /* MyCell.xib */,
@@ -186,13 +271,11 @@
 				1ABFAC0725FBAF020001D09E /* LaunchScreen.storyboard */,
 				1ABFAC0A25FBAF020001D09E /* Info.plist */,
 				1A34863825FBBD900013C10D /* extensionViewController.swift */,
-				1AE2153725FBD0EB00175CA5 /* extensionUIButton.swift */,
 				1ACA83AB25FFF1FA00204595 /* MyCell.swift */,
 				1A6E97F72625ABB5002AF662 /* PurchaseViewController.swift */,
 				1A584BA126275656000448CE /* PolicyViewController.swift */,
 				1A584BA5262756B5000448CE /* TermsViewController.swift */,
 				1A93DEFA262C585C0090D9E8 /* SwiftyStoreKit.swift */,
-				1A949B762633171700C65B62 /* extensionUIDevice.swift */,
 			);
 			path = StartVPN;
 			sourceTree = "<group>";
@@ -312,11 +395,14 @@
 			files = (
 				1ABFAC0925FBAF020001D09E /* LaunchScreen.storyboard in Resources */,
 				1ACA83AE25FFF1FA00204595 /* MyCell.xib in Resources */,
+				1ABD6157284F8B0C005C0227 /* CountriesTableViewCell.xib in Resources */,
 				1ABFAC0625FBAF020001D09E /* Assets.xcassets in Resources */,
 				1ACA83CC2600021300204595 /* vpn_5.ovpn in Resources */,
 				1ACA83CA2600021300204595 /* vpn_3.ovpn in Resources */,
 				1ACA83C92600021300204595 /* vpn_1.ovpn in Resources */,
 				1ACA83BE25FFF89800204595 /* Main.storyboard in Resources */,
+				1A3B6DDE284F4F6200C5B656 /* ConnectViewController.xib in Resources */,
+				1ABD6152284F887E005C0227 /* CountriesViewController.xib in Resources */,
 				1ACA83CD2600021300204595 /* vpn_4.ovpn in Resources */,
 				1ACA83CB2600021300204595 /* vpn_2.ovpn in Resources */,
 			);
@@ -402,18 +488,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5D4782284E7B7D00B2141F /* ConnectViewController.swift in Sources */,
 				1A34863925FBBD900013C10D /* extensionViewController.swift in Sources */,
 				1A6E97F82625ABB5002AF662 /* PurchaseViewController.swift in Sources */,
+				1ABD6151284F887E005C0227 /* CountriesInteractor.swift in Sources */,
 				1A584BA226275656000448CE /* PolicyViewController.swift in Sources */,
 				1ABFAC0125FBAF010001D09E /* ViewController.swift in Sources */,
 				1A584BA6262756B5000448CE /* TermsViewController.swift in Sources */,
+				1ABD614E284F887E005C0227 /* CountriesRouter.swift in Sources */,
+				1A5D477E284E7B7D00B2141F /* ConnectPresenter.swift in Sources */,
+				1ABD6156284F8B0C005C0227 /* CountriesTableViewCell.swift in Sources */,
 				1A93DEFB262C585C0090D9E8 /* SwiftyStoreKit.swift in Sources */,
 				1ABFABFD25FBAF010001D09E /* AppDelegate.swift in Sources */,
 				1A7191942617939B00403CC4 /* Units.swift in Sources */,
+				1ABD6150284F887E005C0227 /* CountriesViewController.swift in Sources */,
 				1ACA83AD25FFF1FA00204595 /* MyCell.swift in Sources */,
+				1ABD6159284FAF5E005C0227 /* extensionUINavigationController.swift in Sources */,
+				1ABD614F284F887E005C0227 /* CountriesModels.swift in Sources */,
 				1A949B772633171700C65B62 /* extensionUIDevice.swift in Sources */,
 				1AE2153825FBD0EB00175CA5 /* extensionUIButton.swift in Sources */,
+				1A5D4781284E7B7D00B2141F /* ConnectModels.swift in Sources */,
+				1A5D477F284E7B7D00B2141F /* ConnectWorker.swift in Sources */,
+				1A5D4780284E7B7D00B2141F /* ConnectRouter.swift in Sources */,
 				1ABFABFF25FBAF010001D09E /* SceneDelegate.swift in Sources */,
+				1ABD614C284F887E005C0227 /* CountriesPresenter.swift in Sources */,
+				1ABD614D284F887E005C0227 /* CountriesWorker.swift in Sources */,
+				1A5D4783284E7B7D00B2141F /* ConnectInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +548,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = XS6MHWV662;
 				INFOPLIST_FILE = tunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,12 +572,14 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = XS6MHWV662;
 				INFOPLIST_FILE = tunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadyrev.StartVPN.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -536,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -591,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -613,6 +716,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = XS6MHWV662;
 				INFOPLIST_FILE = StartVPN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,6 +741,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = XS6MHWV662;
 				INFOPLIST_FILE = StartVPN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

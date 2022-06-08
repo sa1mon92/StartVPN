@@ -9,7 +9,7 @@ import UIKit
 
 extension UIButton {
     
-    func pulsate(statusConnecting:Bool){
+    func pulsate(_ statusConnecting:Bool){
         if statusConnecting == true {
             let pulse = CASpringAnimation(keyPath: "transform.scale")
             pulse.duration = 0.6

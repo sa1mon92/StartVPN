@@ -95,7 +95,6 @@ class ViewController: UIViewController {
         guard let session = manager?.connection as? NETunnelProviderSession else {
             return
         }
-        
         do {
             try session.sendProviderMessage("SOME_STATIC_KEY".data(using: .utf8)!) { (data) in
             guard let data = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSDictionary.self, from: data! as Data) else {
@@ -196,7 +195,7 @@ class ViewController: UIViewController {
                         self.dropDownButton.isUserInteractionEnabled = false
                         self.startButton.isUserInteractionEnabled = false
                         self.startButton.setImage(UIImage(named: "Connect.png"), for: .normal)
-                        self.startButton.pulsate(statusConnecting: true)
+                        self.startButton.pulsate(true)
                         self.loading.startAnimating()
                         for i in 0...purchaseId.count - 1 {
                             let appleValidator = AppleReceiptValidator(service: .production, sharedSecret: sharedSecret)
@@ -225,7 +224,7 @@ class ViewController: UIViewController {
                                             self.dropDownButton.isUserInteractionEnabled = true
                                             self.startButton.isUserInteractionEnabled = true
                                             self.startButton.setImage(UIImage(named: "On.png"), for: .normal)
-                                            self.startButton.pulsate(statusConnecting: false)
+                                            self.startButton.pulsate(false)
                                             self.loading.stopAnimating()
                                         }
                                     case .notPurchased:
@@ -235,7 +234,7 @@ class ViewController: UIViewController {
                                             self.dropDownButton.isUserInteractionEnabled = true
                                             self.startButton.isUserInteractionEnabled = true
                                             self.startButton.setImage(UIImage(named: "On.png"), for: .normal)
-                                            self.startButton.pulsate(statusConnecting: false)
+                                            self.startButton.pulsate(false)
                                             self.loading.stopAnimating()
                                         }
                                     }
@@ -276,20 +275,20 @@ class ViewController: UIViewController {
              self.hidden()
              timer.invalidate()
              self.startButton.setImage(UIImage(named: "On.png"), for: .normal)
-             self.startButton.pulsate(statusConnecting: false)
+             self.startButton.pulsate(false)
              self.loading.stopAnimating()
            case NEVPNStatus.connecting:
              self.statusLabel.text = "CONNECTING"
              self.dropDownButton.isUserInteractionEnabled = false
              self.startButton.isUserInteractionEnabled = false
              self.startButton.setImage(UIImage(named: "Connect.png"), for: .normal)
-             self.startButton.pulsate(statusConnecting: true)
+             self.startButton.pulsate(true)
              self.loading.startAnimating()
            case NEVPNStatus.connected:
              self.statusLabel.text = "CONNECTED"
              self.startButton.isUserInteractionEnabled = true
              statusConnection = true
-             self.startButton.pulsate(statusConnecting: false)
+             self.startButton.pulsate(false)
              self.loading.stopAnimating()
              self.unhidden()
              self.startButton.setImage(UIImage(named: "Off.png"), for: .normal)
