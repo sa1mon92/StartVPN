@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,7 +12,12 @@
             <connections>
                 <outlet property="countryButton" destination="Hvi-tl-dOu" id="GMc-Lu-Uy4"/>
                 <outlet property="downloadLabel" destination="7AK-ey-41c" id="Zdz-ea-bva"/>
+                <outlet property="mapImage" destination="UaQ-cy-16q" id="QR2-96-nzY"/>
+                <outlet property="protocolSegmentedControl" destination="NYB-Ku-wsO" id="rho-km-ayA"/>
                 <outlet property="startButton" destination="YJA-4N-DeK" id="xJq-mr-Jrt"/>
+                <outlet property="trafficDownloadLabel" destination="7AK-ey-41c" id="7Uh-el-5DO"/>
+                <outlet property="trafficStackView" destination="N69-ZC-OmC" id="UuV-B1-QHZ"/>
+                <outlet property="trafficUploadLabel" destination="D8X-He-FrJ" id="AA4-FD-5qz"/>
                 <outlet property="uploadLabel" destination="D8X-He-FrJ" id="lS6-Lr-6Vj"/>
                 <outlet property="view" destination="kKH-Tl-pfc" id="M0W-JF-JUt"/>
             </connections>
@@ -132,6 +136,13 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-cy-16q">
                     <rect key="frame" x="0.0" y="44" width="414" height="369"/>
                 </imageView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NYB-Ku-wsO">
+                    <rect key="frame" x="160.5" y="746" width="93" height="32"/>
+                    <segments>
+                        <segment title="TCP"/>
+                        <segment title="UDP"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="khs-7d-U7Q"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -139,7 +150,9 @@
                 <constraint firstItem="Hvi-tl-dOu" firstAttribute="centerY" secondItem="kKH-Tl-pfc" secondAttribute="centerY" multiplier="1.5" id="1nc-zO-3wD"/>
                 <constraint firstItem="YJA-4N-DeK" firstAttribute="centerY" secondItem="kKH-Tl-pfc" secondAttribute="centerY" multiplier="1.1" id="2rM-E7-hrB"/>
                 <constraint firstItem="UaQ-cy-16q" firstAttribute="top" secondItem="khs-7d-U7Q" secondAttribute="top" id="511-GR-SCW"/>
+                <constraint firstItem="NYB-Ku-wsO" firstAttribute="centerY" secondItem="kKH-Tl-pfc" secondAttribute="centerY" multiplier="1.7" id="9Ga-33-3pZ"/>
                 <constraint firstItem="YJA-4N-DeK" firstAttribute="centerX" secondItem="kKH-Tl-pfc" secondAttribute="centerX" id="Fyy-XF-fSi"/>
+                <constraint firstItem="NYB-Ku-wsO" firstAttribute="centerX" secondItem="kKH-Tl-pfc" secondAttribute="centerX" id="JvM-a7-9FD"/>
                 <constraint firstItem="YJA-4N-DeK" firstAttribute="top" secondItem="UaQ-cy-16q" secondAttribute="bottom" constant="30" id="PPD-I4-XRd"/>
                 <constraint firstItem="khs-7d-U7Q" firstAttribute="trailing" secondItem="N69-ZC-OmC" secondAttribute="trailing" id="Ziu-nc-kMa"/>
                 <constraint firstItem="Hvi-tl-dOu" firstAttribute="centerX" secondItem="kKH-Tl-pfc" secondAttribute="centerX" id="bRd-un-T0Q"/>

@@ -16,28 +16,46 @@ enum Connect {
                 case startButtonTouch
                 case countryButtonTouch
                 case didSelectCountry(country: Country)
-                case didChangeConnectingStatus(status: ConnectingStatus)
                 case showError(title: String, message: String)
                 case showPasswordAlert
-                case didUpdatePassword
+                case didUpdatePassword(password: String)
+                case viewDidDisappear
+                case statusChangedToConnecting
+                case statusChangedToConnected
+                case statusChangedToDisconnected
+                case updateTimer(timer: String)
+                case updateTrafficStats(upload: Int64, download: Int64)
+                case showMap(index: Int?)
+                case didSelectProtocol(index: Int)
             }
         }
         struct Response {
             enum ResponseType {
                 case presentCountries
                 case presentCountry(country: Country)
-                case presentConnectingStatus(status: ConnectingStatus)
                 case presentError(title: String, message: String)
                 case presentPasswordAlert
+                case presentStatusConnecting
+                case presentStatusConnected
+                case presentStatusDisconnected
+                case presentTimer(timer: String)
+                case presentTrafficStats(upload: Int64, download: Int64)
+                case presentMap(index: Int?)
             }
         }
         struct ViewModel {
             enum ViewModelData {
                 case displayCountries
                 case displayCountry(viewModel: CountriesViewModel.Cell)
-                case displayConnectingStatus(status: ConnectingStatus)
-                case displayError(title: String, message: String)
+                case displayErrorAlert(title: String, message: String)
                 case displayPasswordAlert
+                case displayTrafficStats(upload: Int64, download: Int64)
+                case displayMap(image: UIImage, transform: CGAffineTransform)
+                case displayNavigationTitle(title: String)
+                case displayStartButton(image: UIImage)
+                case displayPulsate(isEnable: Bool)
+                case displayTrafficStackView(isEnable: Bool)
+                case displayProtocolSegmentedControl(isEnable: Bool)
             }
         }
     }
@@ -57,11 +75,12 @@ enum Country: String, CaseIterable {
     }
 }
 
-enum ConnectingStatus: String {
-    case invalid
-    case disconnected
-    case connecting
-    case connected
-    case reasserting
-    case disconnecting
+enum NetworkProtocol: String, CaseIterable {
+    case TCP
+    case UDP
+    
+    static subscript(_ index: Int) -> NetworkProtocol {
+        return self.allCases[index]
+    }
 }
+
