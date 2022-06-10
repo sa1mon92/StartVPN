@@ -25,7 +25,7 @@ enum Countries {
         }
         struct ViewModel {
             enum ViewModelData {
-                case displayCountries(viewModel: CountriesViewModel)
+                case displayCountries(viewModel: CountriesViewModelType)
                 case dysplayCountry(country: Country)
             }
         }
@@ -33,12 +33,21 @@ enum Countries {
     
 }
 
+protocol CountriesViewModelType {
+    let cells: [CountryCellViewModelType]
+    func cellViewModel(forIndexPath: IndexPath) -> CountryCellViewModelType?
+}
 
-struct CountriesViewModel {
+protocol CountryCellViewModelType {
+    let countryName: String
+    let countryImage: UIImage?
+}
+
+struct CountriesViewModel: CountriesViewModelType {
     
     let cells: [Cell]
     
-    struct Cell {
+    struct Cell: CountryCellViewModelType {
         let countryName: String
         let countryImage: UIImage?
         
@@ -59,5 +68,9 @@ struct CountriesViewModel {
             cells.append(cell)
         }
         self.cells = cells
+    }
+    
+    func cellViewModel(forIndexPath: IndexPath) -> CountryCellViewModelType? {
+        return cells[IndexPath.row]
     }
 }

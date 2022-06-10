@@ -46,7 +46,7 @@ enum Connect {
         struct ViewModel {
             enum ViewModelData {
                 case displayCountries
-                case displayCountry(viewModel: CountriesViewModel.Cell)
+                case displayCountry(viewModel: CountryCellViewModelType)
                 case displayErrorAlert(title: String, message: String)
                 case displayPasswordAlert
                 case displayTrafficStats(upload: Int64, download: Int64)

@@ -18,7 +18,7 @@ class CountriesPresenter: CountriesPresentationLogic {
     func presentData(response: Countries.Model.Response.ResponseType) {
         switch response {
         case .presentCountries:
-            let viewModel = CountriesViewModel(countries: Country.allCases)
+            let viewModel = CountriesViewModelType(countries: Country.allCases)
             viewController?.displayData(viewModel: .displayCountries(viewModel: viewModel))
         case .presentCountry(country: let country):
             viewController?.displayData(viewModel: .dysplayCountry(country: country))

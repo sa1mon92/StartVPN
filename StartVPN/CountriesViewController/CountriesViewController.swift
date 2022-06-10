@@ -16,7 +16,7 @@ class CountriesViewController: UIViewController, CountriesDisplayLogic {
     
     @IBOutlet weak var countriesTableView: UITableView!
     
-    var viewModel: CountriesViewModel?
+    var viewModel: CountriesViewModelType?
     
     var interactor: CountriesBusinessLogic?
     var router: (NSObjectProtocol & CountriesRoutingLogic)?
@@ -96,9 +96,8 @@ extension CountriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CountriesTableViewCell
         
-        guard let cellViewModel = viewModel?.cells[indexPath.row] else { return cell }
-        cell.countryLabel.text = cellViewModel.countryName
-        cell.countryImage.image = cellViewModel.countryImage
+        guard let cellViewModel = viewModel?.cellViewModel(forIndexPath: indexPath) else { return cell }
+        cell.set(viewModel: cellViewModel)
         return cell
     }
     

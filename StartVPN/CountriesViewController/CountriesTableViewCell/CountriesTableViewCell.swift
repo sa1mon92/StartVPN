@@ -23,4 +23,8 @@ class CountriesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func set(viewModel: CountryCellViewModelType) {
+        countryLabel.text = viewModel.countryName
+        countryImage.image = viewModel.countryImage
+    }
 }
