@@ -23,7 +23,6 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     }()
 
     override func startTunnel(options: [String : NSObject]? = nil, completionHandler: @escaping (Error?) -> Void) {
-        //let _ = DispatchSemaphore(value: 0).wait(timeout: .now() + 20)
         
         guard let protocolConfiguration = protocolConfiguration as? NETunnelProviderProtocol else {
             fatalError("protocolConfiguration should be an instance of the NETunnelProviderProtocol class")
