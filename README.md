@@ -7,7 +7,7 @@ This is my first app. This app is an OpenVPN client based on Free VPN - [VPNBook
 * PacketTunnelProvider
 ***
 ###  __Preview__
-![<img src="Preview_1.png" width="397" height="800">](Preview_1.png)
+![<img src="Preview_1.png" width="397" height="800">](Preview_1.png)![<img src="Preview_2.png" width="397" height="800">](Preview_2.png)
 ***
 ###  __Feedback__
 Telegram - @Sa1monch
