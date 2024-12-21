@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2CA8CF25FBB8AE00398FAC /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2CA8CE25FBB8AE00398FAC /* NetworkExtension.framework */; };
-		1A2CA8D525FBB8CA00398FAC /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2CA8CE25FBB8AE00398FAC /* NetworkExtension.framework */; };
 		1A2CA8D825FBB8CA00398FAC /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CA8D725FBB8CA00398FAC /* PacketTunnelProvider.swift */; };
 		1A2CA8DD25FBB8CA00398FAC /* tunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A2CA8D425FBB8CA00398FAC /* tunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1A3B6DDE284F4F6200C5B656 /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3B6DDD284F4F6200C5B656 /* ConnectViewController.xib */; };
@@ -36,11 +34,13 @@
 		1ABFAC0625FBAF020001D09E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABFAC0525FBAF020001D09E /* Assets.xcassets */; };
 		1ABFAC0925FBAF020001D09E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABFAC0725FBAF020001D09E /* LaunchScreen.storyboard */; };
 		1AC547F925FBBB6200635DF7 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC547F825FBBB6200635DF7 /* Then.swift */; };
-		1AC547FD25FBBC2B00635DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC547FC25FBBC2B00635DF7 /* UIKit.framework */; };
-		1AC547FF25FBBC3300635DF7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC547FE25FBBC3300635DF7 /* SystemConfiguration.framework */; };
+		1AE185F12D16BB2400B5C739 /* Pods_StartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8299D6D08DE6DF2CBCBBEF50 /* Pods_StartVPN.framework */; };
+		1AE185F42D16BB2800B5C739 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2CA8CE25FBB8AE00398FAC /* NetworkExtension.framework */; };
+		1AE185F62D16BB7900B5C739 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A2CA8CE25FBB8AE00398FAC /* NetworkExtension.framework */; };
+		1AE185F92D16BB7A00B5C739 /* Pods_tunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EB01331948996132AB8FFF /* Pods_tunnel.framework */; };
+		1AE185FB2D16BB7C00B5C739 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC547FE25FBBC3300635DF7 /* SystemConfiguration.framework */; };
+		1AE185FD2D16BB7D00B5C739 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC547FC25FBBC2B00635DF7 /* UIKit.framework */; };
 		1AE2153825FBD0EB00175CA5 /* extensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2153725FBD0EB00175CA5 /* extensionUIButton.swift */; };
-		2F2520560F268A02D8EAF8A2 /* Pods_StartVPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8299D6D08DE6DF2CBCBBEF50 /* Pods_StartVPN.framework */; };
-		75884301DAE2532D4AE28276 /* Pods_tunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EB01331948996132AB8FFF /* Pods_tunnel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,10 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A2CA8D525FBB8CA00398FAC /* NetworkExtension.framework in Frameworks */,
-				1AC547FD25FBBC2B00635DF7 /* UIKit.framework in Frameworks */,
-				1AC547FF25FBBC3300635DF7 /* SystemConfiguration.framework in Frameworks */,
-				75884301DAE2532D4AE28276 /* Pods_tunnel.framework in Frameworks */,
+				1AE185F92D16BB7A00B5C739 /* Pods_tunnel.framework in Frameworks */,
+				1AE185FD2D16BB7D00B5C739 /* UIKit.framework in Frameworks */,
+				1AE185FB2D16BB7C00B5C739 /* SystemConfiguration.framework in Frameworks */,
+				1AE185F62D16BB7900B5C739 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A2CA8CF25FBB8AE00398FAC /* NetworkExtension.framework in Frameworks */,
-				2F2520560F268A02D8EAF8A2 /* Pods_StartVPN.framework in Frameworks */,
+				1AE185F12D16BB2400B5C739 /* Pods_StartVPN.framework in Frameworks */,
+				1AE185F42D16BB2800B5C739 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +686,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadyrev.StartVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -711,6 +712,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadyrev.StartVPN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
