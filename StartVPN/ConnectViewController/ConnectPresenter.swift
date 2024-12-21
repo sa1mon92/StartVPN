@@ -20,7 +20,8 @@ class ConnectPresenter: ConnectPresentationLogic {
         case .presentCountries:
             viewController?.displayData(viewModel: .displayCountries)
         case .presentCountry(country: let country):
-            let viewModel = CountryCellViewModelType(country: country)
+            
+            let viewModel = CountriesViewModel.Cell(country: country)
             viewController?.displayData(viewModel: .displayCountry(viewModel: viewModel))
         case .presentError(title: let title, message: let message):
             viewController?.displayData(viewModel: .displayErrorAlert(title: title, message: message))

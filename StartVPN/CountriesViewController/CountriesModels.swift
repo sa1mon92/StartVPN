@@ -34,18 +34,19 @@ enum Countries {
 }
 
 protocol CountriesViewModelType {
-    let cells: [CountryCellViewModelType]
+    var cells: [CountryCellViewModelType] { get }
+    
     func cellViewModel(forIndexPath: IndexPath) -> CountryCellViewModelType?
 }
 
 protocol CountryCellViewModelType {
-    let countryName: String
-    let countryImage: UIImage?
+    var countryName: String { get }
+    var countryImage: UIImage? { get }
 }
 
 struct CountriesViewModel: CountriesViewModelType {
     
-    let cells: [Cell]
+    let cells: [CountryCellViewModelType]
     
     struct Cell: CountryCellViewModelType {
         let countryName: String
@@ -70,7 +71,7 @@ struct CountriesViewModel: CountriesViewModelType {
         self.cells = cells
     }
     
-    func cellViewModel(forIndexPath: IndexPath) -> CountryCellViewModelType? {
-        return cells[IndexPath.row]
+    func cellViewModel(forIndexPath indexPath: IndexPath) -> CountryCellViewModelType? {
+        return cells[indexPath.row]
     }
 }
