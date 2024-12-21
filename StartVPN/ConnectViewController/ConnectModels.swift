@@ -65,10 +65,6 @@ enum Connect {
 enum Country: String, CaseIterable {
     case random = "RANDOM COUNTRY"
     case USA = "USA"
-    case Canada = "CANADA"
-    case Germany = "GERMANY"
-    case France = "FRANCE"
-    case Poland = "POLAND"
     
     static subscript(_ index: Int) -> Country {
         return self.allCases[index]

@@ -7,7 +7,6 @@ target 'StartVPN' do
 
   # Pods for StartVPN
   pod 'KeychainSwift', '~> 19.0'
-  pod 'DropDown', '2.3.13'
   pod 'NVActivityIndicatorView'
   pod 'SwiftyStoreKit'
 
